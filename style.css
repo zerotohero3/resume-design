@@ -20,7 +20,7 @@ body {
 h3 {
   text-transform: uppercase;
   line-height: 2;
-  letter-spacing: 2;
+  letter-spacing: 0.2rem;
   font-size: 1.8rem;
 }
 
@@ -56,7 +56,7 @@ section#resume {
 }
 
 #resume .header .header-name {
-  letter-spacing: 2;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   padding-top: 0.8rem;
   text-align: center;
@@ -64,7 +64,7 @@ section#resume {
 }
 
 #resume .header .header-student {
-  letter-spacing: 1;
+  letter-spacing: 0.1rem;
   padding-bottom: 0.8rem;
 }
 
@@ -77,3 +77,24 @@ section#resume {
   padding: 0.8rem 0;
   font-size: 1.4rem;
 }
+
+#resume .header .divisao {
+  margin: 1.6rem 3.2rem;
+  width: 90%;
+  border: 0.1rem solid #818181;
+}
+
+/* LEFT */
+
+.body-resume {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.body-resume .left {
+  text-align: right;
+  padding: 0 1.6rem;
+  border-right: 0.2rem solid #818181;
+}
+
