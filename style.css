@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 :root {
@@ -20,7 +20,8 @@ body {
 h3 {
   text-transform: uppercase;
   line-height: 2;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
   font-size: 1.8rem;
 }
 
@@ -84,6 +85,16 @@ section#resume {
   border: 0.1rem solid #818181;
 }
 
+.link {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.link:hover {
+  color: #818181;
+  transition: color 0.3s;
+}
+
 /* LEFT */
 
 .body-resume {
@@ -98,3 +109,70 @@ section#resume {
   border-right: 0.2rem solid #818181;
 }
 
+.body-resume .left .card {
+  padding: 0.8rem 1.6rem;
+}
+
+.body-resume .left .card .description {
+  padding: 0.8rem 0;
+}
+
+.subdescription {
+  padding-bottom: 0.8rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.skills-bar {
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
+  background: #e5e5e5;
+  position: relative;
+}
+
+.skills-fill {
+  height: 1rem;
+  background: #818181;
+  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.html {
+  width: 60%;
+}
+
+.css {
+  width: 55%;
+}
+
+.javascript {
+  width: 55%;
+}
+
+.typescript {
+  width: 45%;
+}
+
+.redes {
+  width: 35%;
+}
+
+.python {
+  width: 35%;
+}
+
+.ux {
+  width: 50%;
+}
+
+.photoshop {
+  width: 78%;
+}
