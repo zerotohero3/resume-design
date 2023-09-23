@@ -117,8 +117,12 @@ section#resume {
   padding: 0.8rem 0;
 }
 
-.subdescription {
-  padding-bottom: 0.8rem;
+/* .subdescription {
+  padding: 0.2rem 0 0 0;
+} */
+
+.p_experience {
+  padding: 0.8rem 0 0 0;
 }
 
 .skills {
@@ -161,6 +165,10 @@ section#resume {
   width: 45%;
 }
 
+.react {
+  width: 0%;
+}
+
 .redes {
   width: 35%;
 }
@@ -170,9 +178,24 @@ section#resume {
 }
 
 .ux {
-  width: 50%;
+  width: 38%;
 }
 
 .photoshop {
   width: 78%;
+}
+
+/* RIGHT */
+
+.body-resume .right .card {
+  padding: 0.8rem 1.6rem;
+}
+
+.body-resume .right .card .description {
+  padding: 0.8rem 0;
+}
+
+.body-resume .right {
+  text-align: left;
+  padding: 0 1.6rem;
 }
