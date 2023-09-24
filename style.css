@@ -54,6 +54,7 @@ section#resume {
   object-fit: cover;
   border-radius: 50%;
   position: relative;
+  animation: show 2s .5s;
 }
 
 #resume .header .header-name {
@@ -62,11 +63,15 @@ section#resume {
   padding-top: 0.8rem;
   text-align: center;
   font-size: 2.4rem;
+  position: relative;
+  animation: show 2s .6s;
 }
 
 #resume .header .header-student {
   letter-spacing: 0.1rem;
   padding-bottom: 0.8rem;
+  position: relative;
+  animation: show 2s .6s;
 }
 
 #resume .header .header-contact {
@@ -77,6 +82,8 @@ section#resume {
   gap: 1rem;
   padding: 0.8rem 0;
   font-size: 1.4rem;
+  position: relative;
+  animation: show 2s .8s;
 }
 
 #resume .header .divisao {
@@ -110,19 +117,21 @@ section#resume {
 }
 
 .body-resume .left .card {
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.6rem;
+  position: relative;
+  animation: show 3s 1s;
 }
 
 .body-resume .left .card .description {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
 }
 
-/* .subdescription {
+.subdescription {
   padding: 0.2rem 0 0 0;
-} */
+}
 
 .p_experience {
-  padding: 0.8rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .skills {
@@ -188,14 +197,57 @@ section#resume {
 /* RIGHT */
 
 .body-resume .right .card {
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.6rem;
+  position: relative;
+  animation: show 3s 1s;
 }
 
 .body-resume .right .card .description {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
 }
 
 .body-resume .right {
   text-align: left;
   padding: 0 1.6rem;
+}
+
+/* .flex {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.interests {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.interests_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests_icon {
+  font-size: 2.4rem;
+  color: #1f1f1f;
+}
+
+.interests_name {
+  font-size: 1.4rem;
+}
+
+/* effect loading */
+
+@keyframes show {
+  from {
+    opacity: 0;
+    top: -1rem;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
