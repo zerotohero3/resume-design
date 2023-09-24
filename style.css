@@ -238,7 +238,7 @@ section#resume {
   font-size: 1.4rem;
 }
 
-/* effect loading */
+/* LOADING EFFECT */
 
 @keyframes show {
   from {
@@ -249,5 +249,14 @@ section#resume {
   to {
     opacity: 1;
     top: 0;
+  }
+}
+
+/* MOBILE  */
+
+@media screen and (max-width: 630px) {
+  .body-resume .left {
+    border-right: none;
+    text-align: left;
   }
 }
